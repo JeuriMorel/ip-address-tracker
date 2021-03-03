@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/css/main.min.css">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  
+</head>
+<body class="body">
+  <header class="header">
+    <div class="overlay"></div>
+
+    <h1 class="heading">
+      IP Address Tracker
+    </h1>
+  
+  <form class="input" id='form'>
+    <input type="text" class="input__field" placeholder="Search for any IP address or domain
+  ">
+  <input type="submit" class="input__button" value="">
+  
+  </form>
+
+  
+
+
+  <div class="display">
+    <div class="display__ip">
+      <h3 class="display__ip__h h">
+        IP Address
+      </h3>
+      <p class="display__ip__p p" id='ip'>
+        
+      </p>
+    </div>
+    <div class="display__location">
+      <h3 class="display__location__h h">
+        Location
+      </h3>
+      <p class="display__location__p p" id='location'>
+        
+      </p>
+    </div>
+    <div class="display__timezone">
+      <h3 class="display__timezone__h h">
+        Timezone
+      </h3>
+      <p class="display__timezone__p p" id='utc'>
+        
+      </p>
+    </div>
+    <div class="display__isp">
+      <h3 class="display__isp__h h">
+        ISP
+      </h3>
+      <p class="display__isp__p p" id="isp">
+        
+      </p>
+    </div>
+  
+  </div>
+  </header>
+
+  <div class="map" id='map'></div>
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
